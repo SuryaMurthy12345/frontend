@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .big{
+      display: flex;
+      margin-top: 150px;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .box-1 {
+      background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      border-radius: 15px;
+      width: 300px;
+      height: 420px;
+      text-align: center;
+    }
+
+    .circle {
+      width: 50%;
+      height: 150px;
+      border-radius: 150px;
+      background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      position: relative;
+      left: 69px;
+    }
+
+    #content {
+      padding-top: 25px;
+      color: white;
+      padding-right: 10px;
+      font-size: 24px;
+    }
+
+    .con1 {
+      position: relative;
+      top: 45px;
+      color: hsl(0, 0%, 100%);
+      font-size: 40px;
+      font-weight: 500px;
+    }
+
+    .con2 {
+      color: hsl(241, 100%, 89%);
+    }
+
+    .emo {
+      color: hsl(0, 0%, 100%);
+      font-size: 30px;
+    }
+
+    .last {
+      padding-top: 12px;
+      text-align: center;
+      color: hsl(241, 100%, 89%);
+      padding: 10px 50px;
+    }
+
+    .below {
+      padding-top: 30px;
+    }
+
+    .box-2 {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 15px;
+      width: 300px;
+      height: 420px;
+    }
+
+    .head {
+      font-size: 23px;
+      margin-top: 45px;
+      padding-left: 3px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    #fl {
+      margin-top: 16px;
+      padding: 9px;
+      font-size: 17px;
+      border-radius: 20px;
+      display: flex;
+
+
+    }
+
+    #fl i {
+      flex-grow: 1;
+    }
+
+    #fl .f1 {
+      flex-grow: 11;
+    }
+
+    #fl .f2 {
+      flex-grow: auto;
+    }
+
+    .button {
+      text-align: center;
+      background-color: hsla(256, 72%, 46%, 1);
+      font-size: 20px;
+      padding: 9px;
+      border-radius: 20px;
+      margin: 0 20px;
+      margin-top: 35px;
+      color: hsl(241, 100%, 89%);
+    }
+
+    .button:hover {
+      background-color: black;
+    }
+
+    .fr {
+      color: hsl(0, 100%, 67%);
+
+    }
+
+    .flr {
+      background-color: hsla(0, 100%, 67%, 0.368);
+    }
+
+    .fo {
+      color: hsl(39, 100%, 56%);
+    }
+
+    .flo {
+      background-color: hsla(39, 100%, 56%, 0.388);
+    }
+
+    .fg {
+      color: hsl(166, 100%, 37%);
+    }
+
+    .flg {
+      background-color: hsla(166, 100%, 37%, 0.274);
+    }
+
+    .fb {
+      color: hsl(234, 85%, 45%);
+    }
+
+    .flb {
+      background-color: hsla(234, 85%, 45%, 0.37);
+    } 
+    .attribution{ 
+      margin-top:40px; 
+      font-size:20px;
+    } 
+    @media only screen and (max-width: 591px){ 
+      .big{ 
+        display:flex; 
+        flex-wrap: wrap;  
+        gap:0px; 
+      } 
+    }
+  </style>
+</head>
+
+<body> 
+  <div class="big">
+  <div class="box-1">
+    <p id="content">Your Result</p>
+    <div class="circle">
+      <p class="con1">76</p>
+      <div class="con2">of 100</div>
+
+    </div>
+    <div class="below">
+      <div class='emo'>Great</div>
+      <div class="last">You scored higher than 65% of the people who have taken these tests. </div>
+    </div>
+  </div>
+  <div class="box-2">
+    <div class="head">Summary</div>
+
+    <div id="fl" class="flr">
+      <i class="fa-solid fa-cloud-bolt"></i>
+      <span class="f1 fr">Reaction</span>
+      <span class="f2">80 / 100</span>
+    </div>
+    <div id="fl" class="flo">
+      <i class="fa-solid fa-heart"></i>
+      <span class="f1 fo">Memory</span>
+      <span class="f2">92 / 100</span>
+    </div>
+    <div id="fl" class="flg">
+      <i class="fa-solid fa-message"></i>
+      <span class="f1 fg">Verbal</span>
+      <span class="f2">61 / 100</span>
+    </div>
+    <div id="fl" class="flb">
+      <i class="fa-solid fa-eye"></i>
+      <span class="f1 fb">Visual</span>
+      <span class="f2">72 / 100</span>
+    </div>
+    <div class="button">
+      Continue
+    </div>
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">B.S.N.Murthy</a>
+  </div>
+</body>
+
+</html>
