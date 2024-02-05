@@ -25,7 +25,18 @@ for i in range(times):
         elif s2=="total": 
             print(sum(listy)) 
             break
-        
+
+def prime(k): 
+    c=0
+    for i in range(2,k): 
+        if k%i==0: 
+            c=1 
+            break 
+    if c==0: 
+        print(k,end=" ")            
+a=int(input())  
+for i in range(2,a+1): 
+    prime(i)
 
 
     
