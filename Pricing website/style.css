@@ -1,0 +1,66 @@
+*{ 
+    background-image: url("https://previews.123rf.com/images/rawpixel/rawpixel1903/rawpixel190305305/119601114-white-modern-background-design-vector.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
+}
+
+i{ 
+   color:blue; 
+   
+} 
+h2{ 
+    display: inline;
+} 
+
+button{ 
+    background: none; 
+    color:none; 
+    border:none; 
+    cursor:pointer;
+} 
+
+.rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+} 
+#main{ 
+    display: flex; 
+    justify-content: center; 
+    gap:200px; 
+    align-items: center; margin-top: 50px;
+}   
+.same{ 
+    padding:40px;
+}
+
+#two{ 
+   background-color:blue;
+    
+    
+} 
+#first{
+    text-align: center;
+} 
+#learn{ 
+    text-align: center; 
+    font-size: 17px;  
+    background-color: rgba(0, 0, 255, 0.619); 
+    color:white;  
+    padding:12px;
+}  
+
+#learn:hover{ 
+    background-color:white;
+    color:black;
+} 
+
+@media screen and (min-width:375px) and (max-width:896px){ 
+    #main{
+    display: flex;   
+    flex-wrap: wrap; 
+    gap:100px;
+
+    }
+    
+}
